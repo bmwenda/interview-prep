@@ -12,13 +12,17 @@ Some questions the recruiter might ask:
 
 1. Tell me about yourself
     - You have a professional life and personal life. Say something about your interests in addition to your qualifications and career
-2. Why are interested in joining us?
-3. What is your best achievement that you can talk about?
-4. What is your lowest moment and how did you overcome it?
-5. What does an ideal place of work look like to you?
-    - A variariation of this could be: If you had identical offers, why would you choose one over the other?
-6. What is the greatest strength that you excel at?
-7. What things are you not good at?
+2. Briefly describe your previous role(s)
+    - Be clear and concise. Describe particular tasks you did and the role you played in your teams.
+    - Highlight technologies and experiences that might be most relevant to this role
+    - Try to show how your contributions contributed to success
+3. Why are interested in joining us?
+4. What is your best achievement that you can talk about?
+5. What is your lowest moment and how did you overcome it?
+6. What does an ideal place of work look like to you?
+    - A variation of this could be: If you had identical offers, why would you choose one over the other?
+7. What is the greatest strength that you excel at?
+8. What things are you not good at?
 
 ### Your questions
 Ask questions that will give you good insights about the company. Some of these are dependent on who you are talking to e.g people manager, engineering manager, CTO and so on.
