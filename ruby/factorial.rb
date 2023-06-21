@@ -9,5 +9,8 @@ def factorial(n)
 end
 
 # iteration
-# def factorial(n)
-# end
+def factorial(n)
+  # TODO
+end
+
+# TODO: benchmark
