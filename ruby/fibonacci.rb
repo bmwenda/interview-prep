@@ -42,23 +42,23 @@ def array_reduce(n)
 end
 
 Benchmark.bmbm do |x|
-  x.report('No cache') { (1..35).map { |n| fibonacci(n) }  }
-  x.report('With cache') { (1..35).map { |n| Fibonacci.new.fibonacci(n) } }
+  x.report('No cache') { (0..35).map { |n| fibonacci(n) }  }
+  x.report('With cache') { (0..35).map { |n| Fibonacci.new.fibonacci(n) } }
   x.report('Iteration') { (0..35).map { |n| fibonacci_iter(n) } }
   x.report('Array reduce') { (0..35).reduce([0, 1]) { |result| result << result.last(2).reduce(:+) } }
 end
 
 =begin
 Rehearsal ------------------------------------------------
-No cache       3.947039   0.006088   3.953127 (  3.965162)
-With cache     0.000191   0.000001   0.000192 (  0.000193)
-Iteration      0.000121   0.000012   0.000133 (  0.000244)
+No cache       3.972048   0.003780   3.975828 (  3.983086)
+With cache     0.000231   0.000001   0.000232 (  0.000233)
+Iteration      0.000088   0.000001   0.000089 (  0.000088)
 Array reduce   0.000023   0.000001   0.000024 (  0.000024)
---------------------------------------- total: 3.953476sec
+--------------------------------------- total: 3.976173sec
 
                    user     system      total        real
-No cache       3.983022   0.004200   3.987222 (  3.994640)
-With cache     0.000199   0.000003   0.000202 (  0.000196)
-Iteration      0.000082   0.000003   0.000085 (  0.000080)
+No cache       3.944449   0.004067   3.948516 (  3.955024)
+With cache     0.000204   0.000004   0.000208 (  0.000201)
+Iteration      0.000084   0.000003   0.000087 (  0.000081)
 Array reduce   0.000026   0.000003   0.000029 (  0.000023)
 =end
