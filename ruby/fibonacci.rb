@@ -45,7 +45,7 @@ Benchmark.bmbm do |x|
   x.report('No cache') { (0..35).map { |n| fibonacci(n) }  }
   x.report('With cache') { (0..35).map { |n| Fibonacci.new.fibonacci(n) } }
   x.report('Iteration') { (0..35).map { |n| fibonacci_iter(n) } }
-  x.report('Array reduce') { (0..35).reduce([0, 1]) { |result| result << result.last(2).reduce(:+) } }
+  x.report('Array reduce') { array_reduce(35) }
 end
 
 =begin
