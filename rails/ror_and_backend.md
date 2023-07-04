@@ -1,5 +1,21 @@
 # Common Ruby on Rails Interview Questions
 
+## What happens from the moment a user types a url in the browser to the moment they get back a response?
+This is a very open ended question and there is so much you can say for every step involved, enough to write a book. As you can imagine, different people with different levels and types of experience may give answers of varying depth. It really depends on what the recruiter is evaluating for the specific role. Below are a few things worth mentioning but you can go as far as talking about load balancing, proxies, caching (browser and server), CDNs and much more. It's just enough to get the conversation going.
+
+1. **URL parsing**: The browser parses the url to extract information like domain name, protocol, port, path and so on.
+2. **DNS resolution**: The browser resolves the IP address of the domain name by checking it's local cache first. If not found, it makes a lookup request to the DNS servers.
+3. **TCP/IP connection**: With the IP address known, the browser establishes a TCP (transmission control protocol) connection with the web server.
+4. **HTTP request**: The browser sends a HTTP request to the web server with the required method e.g GET and the request headers.
+5. **Web server**: The web server receives the request and checks the path the browser requested for. It starts generating content required to render that page. This may involve several steps such as retrieving scripts, styles and images or simply retrieving content from the cache. If dynamic content is needed, this is forwarded to the application server.
+6. **Application server**: This handles dynamic content, for example making database queries to retrieve additional information.
+7. **Response**: The server creates a HTTP response and sends it to the browser via the TCP connection. The response contains a status code e.g 200, headers and the response body (content).
+8. **Browser processing**: The browser receives the response and interprets the headers and content and decides how to render it.
+9. **Completing additional resource requests**: The browser may need to make more requests to correctly render all the content. For example some scripts, style sheets and images may be hosted by different servers and need to be retrieved. This process is done the same way as described above in steps 1 - 8.
+10. **Page rendering**: When the browser has fetched all the content it needs, it renders the page and the user can interact with it.
+
+This [stack exchange answer](https://superuser.com/a/31691) is worth a look.
+
 ## Observers and callbacks
 ### Observers
 Use the [observer pattern](https://learn.microsoft.com/en-us/dotnet/standard/events/observer-design-pattern) where we have a provider (subject) and one or more observers. The subject/provider notifies its observers when an event happens. In this way, the observers can perform actions that need to be done as an effect of the subject's events. A common use case is sending notifications.
