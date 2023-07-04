@@ -8,14 +8,14 @@ Some of these are purely for remote jobs while for others, you can filter for re
 
 ### General
 - [Remote.co](https://remote.co/)
-- [We work remotely](https://weworkremotely.com)
+- [We Work Remotely](https://weworkremotely.com)
 - [Remote Africa](https://remoteafrica.io/)
 - [Ycombinator](https://www.ycombinator.com/jobs)
 - [Hackernews](https://hnhiring.com/)
 - [People first jobs](https://peoplefirstjobs.com/)
 - [Remote ok](https://remoteok.com/)
 - [Remotive](https://remotive.io/)
-- [Wellfound (formerly Angelist)](https://wellfound.com/)
+- [Wellfound (formerly AngelList)](https://wellfound.com/)
 - [Power to fly](https://powertofly.com/)
 - [Working nomads](https://www.workingnomads.co/)
 - [Flexjobs](https://www.flexjobs.com/)
