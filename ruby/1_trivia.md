@@ -11,6 +11,11 @@ Further reading:
 - super(): invokes the parent method without any arguments, as presumably expected.
 - super: invokes the parent method with the same arguments that were passed to the child method. An argument error will occur if the arguments passed to the child method don’t match what the parent is expecting.
 
+### String interpolation vs concatenation
+Which is better? Generally interpolation is better because:
+1. It is more efficient because it does not create new string objects. This mostly comes into play when large strings are involved
+2. Easier to read, extend and modify
+
 ### defined?
 checks if a variable is defined or not. Returns nil if the variable is not defined. A few things about defined:
 - it is one of the few things in Ruby that ends in a question mark, but doesn’t follow the usual convention to return either true or false
