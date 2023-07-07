@@ -20,10 +20,14 @@ Some of these are purely for remote jobs while for others, you can filter for re
 - [Working nomads](https://www.workingnomads.co/)
 - [Flexjobs](https://www.flexjobs.com/)
 - [Indeed](https://indeed.com)
-- [Djinni](https://djinni.co)
 
 ### Reverse job boards
 Boards where job seekers create profiles and employers can browse to find a suitable candidate.
 
 - [Arc](https://arc.dev/)
 - [Rails devs](https://railsdevs.com/)
+
+### Communities
+Communities that you might find useful to join.
+
+- [Ruby on Rails Link](https://rubyonrails-link.slack.com)
