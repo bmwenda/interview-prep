@@ -16,6 +16,110 @@ This is a very open ended question and there is so much you can say for every st
 
 This [stack exchange answer](https://superuser.com/a/31691) is worth a look.
 
+## Rails Routing
+### Namespace vs scope
+#### Namespace
+Used to group controllers under one namespace. It prepends resourceful routes with the given namespace and expects the corresponding actions to be under that namespace. Example:
+
+```
+namespace :admin do
+  resources :invoices
+end
+```
+
+Generates
+|Path/Url|Verb|Path|Contoller#Action|
+|--------|----|----|----------------|
+|admin_invoices_path|GET|/admin/invoices|admin/invoices#index|
+|                   |POST|/admin/invoices|admin/invoices#create|
+|new_admin_invoice_path|GET|/admin/invoices/new|admin/invoices#new|
+|...|
+
+The invoices path methods and urls are prefixed with `admin` and the controller action implies the namespace `Admin::InvoicesController` which would be under `app/controllers/admin/invoices_controller.rb`.
+
+#### Scope
+Scope can do the same but gives us more flexibility to suit our needs, e.g not prefixing the namespace in the url, not using a module and so on. Examples:
+
+##### Adding a namespace to the url but not using a module namespace
+
+```
+scope :admin
+  resources :invoices
+end
+```
+
+Generates
+|Path/Url|Verb|Path|Contoller#Action|
+|--------|----|----|----------------|
+|invoices_path|GET|/admin/invoices|invoices#index|
+|                   |POST|/admin/invoices|invoices#create|
+|new_invoice_path|GET|/admin/invoices/new|invoices#new|
+|...|
+
+While the invoices urls have the `admin` prefix, the contoller action does not. This means `InvoicesController` does not have to be under an `Admin::` module. It would remain in `app/controllers/invoices_controller.rb`.
+
+##### module, path and as
+**module**
+
+```
+  scope module: :admin do
+    resources :invoices
+  end
+```
+
+Generates:
+|Path/Url|Verb|Path|Contoller#Action|
+|--------|----|----|----------------|
+|invoices_path|GET|/invoices|admin/invoices#index|
+|                   |POST|/invoices|admin/invoices#create|
+|new_invoice_path|GET|/invoices/new|admin/invoices#new|
+|...|
+
+This option does not add a prefix to the paths, but defines the module namespace where the controller should be, in this case `Admin::InvoicesController`.
+
+**path**
+
+Allows us to customize the prefix of the URI pattern
+
+```
+  scope module: :admin, path: 'payments' do
+    resources :invoices
+  end
+```
+
+Generates:
+|Path/Url|Verb|Path|Contoller#Action|
+|--------|----|----|----------------|
+|invoices_path|GET|/payments/invoices|admin/invoices#index|
+|                   |POST|/payments/invoices|admin/invoices#create|
+|new_invoice_path|GET|/payments/invoices/new|admin/invoices#new|
+|...|
+
+**as**
+
+Allows us to customize the path method names.
+
+```
+  scope module: :admin, path: 'payments', as: 'user_generated' do
+    resources :invoices
+  end
+```
+
+Generates:
+|Path/Url|Verb|Path|Contoller#Action|
+|--------|----|----|----------------|
+|user_generated_invoices_path|GET|/payments/invoices|admin/invoices#index|
+|                   |POST|/payments/invoices|admin/invoices#create|
+new_user_generated_invoice_path|GET|/payments/invoices/new|admin/invoices#new|
+|...|
+
+From this, we can infer that `namespace` is a shorthand. We can achieve the same result for `namespace :admin` with:
+```
+  scope module: :admin, path: 'admin', as: 'admin' do
+    resources :invoices
+  end
+```
+
 ## Observers and callbacks
 ### Observers
 Use the [observer pattern](https://learn.microsoft.com/en-us/dotnet/standard/events/observer-design-pattern) where we have a provider (subject) and one or more observers. The subject/provider notifies its observers when an event happens. In this way, the observers can perform actions that need to be done as an effect of the subject's events. A common use case is sending notifications.
