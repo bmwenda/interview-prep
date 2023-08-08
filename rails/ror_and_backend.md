@@ -16,6 +16,10 @@ This is a very open ended question and there is so much you can say for every st
 
 This [stack exchange answer](https://superuser.com/a/31691) is worth a look.
 
+## Security
+- What are common security vulnerabilities in web applications? - refer to [OWASP top ten](https://owasp.org/Top10/)
+- How does rails solve them? - The official documentation at [Securing Rails Applications](https://guides.rubyonrails.org/security.html) is very comprehensive.
+
 ## Rails Routing
 ### Namespace vs scope
 #### Namespace
