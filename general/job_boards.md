@@ -4,6 +4,7 @@ Some of these are purely for remote jobs while for others, you can filter for re
 ### Ruby specific
 - [Ruby on Remote](https://rubyonremote.com/)
 - [Rails hotwire jobs](https://railshotwirejobs.com/)
+- [Go rails](https://jobs.gorails.com/)
 - [Ruby remotely](https://rubyremotely.com)
 
 ### General
@@ -15,6 +16,8 @@ Some of these are purely for remote jobs while for others, you can filter for re
 - [People first jobs](https://peoplefirstjobs.com/)
 - [Remote ok](https://remoteok.com/)
 - [Remotive](https://remotive.io/)
+- [Vanhack](https://vanhack.com/)
+- [Climatebase](https://climatebase.org/)
 - [Wellfound (formerly AngelList)](https://wellfound.com/)
 - [Power to fly](https://powertofly.com/)
 - [Working nomads](https://www.workingnomads.co/)
