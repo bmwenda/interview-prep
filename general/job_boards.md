@@ -22,7 +22,7 @@ Some of these are purely for remote jobs while for others, you can filter for re
 - [Power to fly](https://powertofly.com/)
 - [Working nomads](https://www.workingnomads.co/)
 - [Flexjobs](https://www.flexjobs.com/)
-- [Indeed](https://indeed.com)
+- [Forward](https://work.withforward.com/)
 
 ### Reverse job boards
 Boards where job seekers create profiles and employers can browse to find a suitable candidate.
