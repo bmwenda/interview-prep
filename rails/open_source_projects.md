@@ -5,4 +5,4 @@ Contributing to open source projects is a great way to keep your skills sharp, l
 - [WikiEduDashboard](https://github.com/WikiEducationFoundation/WikiEduDashboard) - Support WikiMedia Foundation's learning platform
 - [FreeUKGenealogy](https://www.freeukgenealogy.org.uk/about/volunteer/tech-volunteering-opportunities/) - An open data organisation
 
-Visit [CodeTriage](https://www.codetriage.com/) for a list many more open source projects that are looking for contrubutors like you.
+Visit [CodeTriage](https://www.codetriage.com/) for a list many more open source projects that are looking for contributors like you.
