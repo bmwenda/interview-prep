@@ -29,6 +29,7 @@ Boards where job seekers create profiles and employers can browse to find a suit
 
 - [Arc](https://arc.dev/)
 - [Rails devs](https://railsdevs.com/)
+- [Hired](https://hired.com/)
 
 ### Communities
 Communities that you might find useful to join.
