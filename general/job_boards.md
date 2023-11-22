@@ -17,6 +17,7 @@ Some of these are purely for remote jobs while for others, you can filter for re
 - [Remote ok](https://remoteok.com/)
 - [Remotive](https://remotive.io/)
 - [Vanhack](https://vanhack.com/)
+- [devIT](https://devitjobs.uk/)
 - [Climatebase](https://climatebase.org/)
 - [Wellfound (formerly AngelList)](https://wellfound.com/)
 - [Power to fly](https://powertofly.com/)
