@@ -2,6 +2,7 @@
 Some of these are purely for remote jobs while for others, you can filter for remote jobs. Also make use of filters like full stack, back-end, front-end etc for best results.
 
 ### Ruby specific
+- [Official rails jobs board](https://jobs.rubyonrails.org/)
 - [Ruby on Remote](https://rubyonremote.com/)
 - [Rails hotwire jobs](https://railshotwirejobs.com/)
 - [Go rails](https://jobs.gorails.com/)
