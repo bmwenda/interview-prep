@@ -11,6 +11,7 @@ Some of these are purely for remote jobs while for others, you can filter for re
 ### General
 - [Remote.co](https://remote.co/)
 - [We Work Remotely](https://weworkremotely.com)
+- [Trueup](https://www.trueup.io/)
 - [Remote Africa](https://remoteafrica.io/)
 - [Ycombinator](https://www.ycombinator.com/jobs)
 - [Hackernews](https://hnhiring.com/)
