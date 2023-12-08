@@ -26,6 +26,7 @@ Some of these are purely for remote jobs while for others, you can filter for re
 - [Working nomads](https://www.workingnomads.co/)
 - [Flexjobs](https://www.flexjobs.com/)
 - [Forward](https://work.withforward.com/)
+- [Lebohire.com](https://lebohire.com/)
 
 ### Reverse job boards
 Boards where job seekers create profiles and employers can browse to find a suitable candidate.
@@ -33,6 +34,7 @@ Boards where job seekers create profiles and employers can browse to find a suit
 - [Arc](https://arc.dev/)
 - [Rails devs](https://railsdevs.com/)
 - [Hired](https://hired.com/)
+- [Lebohire.com](https://lebohire.com/)
 
 ### Communities
 Communities that you might find useful to join.
