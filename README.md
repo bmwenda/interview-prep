@@ -16,3 +16,4 @@ All the best in your search! 🚀🚀🚀
 
 ## TODO
 - [ ] Behavioral questions - examples, resources and tips
+- [ ] Resume - samples, tips and best practises
